@@ -11,6 +11,6 @@
 
         <Switch  />
 
-        <Switch OnColor="LightGrey" ThumbColor="DarkGrey" Conte  />
+        <Switch OnColor="LightGrey" ThumbColor="DarkGrey" />
     </VerticalStackLayout>
 </ContentPage>

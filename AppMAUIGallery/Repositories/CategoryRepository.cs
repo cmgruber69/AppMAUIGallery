@@ -107,13 +107,43 @@ namespace AppMAUIGallery.Repositories
                         Title = "Radio Button",
                         Description = "Grupo de Caixa de selecao",
                         Page = typeof(RadioButtonPage)
-                    }
-                    ,
+                    },
                     new Component {
                         Title = "Switch Button",
                         Description = "chave switch",
                         Page = typeof(SwitchPage)
+                    },
+                    new Component {
+                        Title = "Stepper Button",
+                        Description = "button stepper",
+                        Page = typeof(StepperPage)
+                    },
+                    new Component {
+                        Title = "Slider Button",
+                        Description = "Barra de controle",
+                        Page = typeof(SliderPage)
+                    },
+                    new Component {
+                        Title = "Time Picker",
+                        Description = "Component to get time from user",
+                        Page = typeof(TimePickerPage)
+                    },
+                    new Component {
+                        Title = "Date Picker",
+                        Description = "Component to get date from user",
+                        Page = typeof(DatePickerPage)
+                    },
+                    new Component {
+                        Title = "Search Bar entry",
+                        Description = "Component search entry",
+                        Page = typeof(SearchBarPage)
+                    },
+                    new Component {
+                        Title = "Picker - DropDown",
+                        Description = "Picker Component = Dropdown",
+                        Page = typeof(PickerPage)
                     }
+
                 }
             });
 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGallery.Views.Components.Forms.StepperPage"
+             Title="StepperPage">
+    <VerticalStackLayout Padding="10">
+        <Label 
+            Text="Stepper page"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+             Text="Quantos cliques?"
+             VerticalOptions="Center" 
+             HorizontalOptions="Start" />
+
+        <Stepper
+            Value="5"
+            Minimum="0"
+            Maximum="10"
+            Increment="1"
+            ValueChanged="Stepper_ValueChanged"
+            />
+
+        <Label x:Name="lblresponse" />
+    </VerticalStackLayout>
+</ContentPage>

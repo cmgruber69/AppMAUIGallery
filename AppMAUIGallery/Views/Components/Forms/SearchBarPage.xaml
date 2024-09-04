@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGallery.Views.Components.Forms.SearchBarPage"
+             Title="SearchBarPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="SearchBar!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="30"/>
+
+        <SearchBar SearchButtonPressed="SearchBar_SearchButtonPressed" />
+
+        <Label x:Name="lblValue" />
+    </VerticalStackLayout>
+</ContentPage>

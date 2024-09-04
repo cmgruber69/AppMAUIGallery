@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGallery.Views.Components.Forms.PickerPage"
+             Title="PickerPage">
+    <VerticalStackLayout Padding="10">
+        <Label 
+            Text="Picker - Drop Down menu"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="30"/>
+
+        <Picker Title="Selecione a Marca" SelectedIndexChanged="Picker_SelectedIndexChanged">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>FIAT</x:String>
+                    <x:String>VW</x:String>
+                    <x:String>GM</x:String>
+                    <x:String>FORD</x:String>
+                    <x:String>Peugeot</x:String>
+                    <x:String>Renault</x:String>
+                    <x:String>Jeep</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Label x:Name="lblValue" />
+    </VerticalStackLayout>
+</ContentPage>
