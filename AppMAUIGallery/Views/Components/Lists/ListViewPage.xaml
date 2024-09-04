@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppMAUIGallery.Views.Components.Lists.ListViewPage"
              Title="ListViewPage">
+    
     <VerticalStackLayout>
         <Label 
             Text="ListView Control"
@@ -55,6 +56,9 @@
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
+            <ListView.Footer>
+                <Label Text="my Footer - 2024"/>
+            </ListView.Footer>
         </ListView>
 
     </VerticalStackLayout>

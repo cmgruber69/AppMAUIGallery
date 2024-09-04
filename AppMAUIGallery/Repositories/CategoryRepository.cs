@@ -3,6 +3,7 @@ using AppMAUIGallery.Views.Components;
 using AppMAUIGallery.Views.Components.Cells;
 using AppMAUIGallery.Views.Components.Forms;
 using AppMAUIGallery.Views.Components.Lists;
+using AppMAUIGallery.Views.Components.Lists.Models;
 using AppMAUIGallery.Views.Components.Visuals;
 using AppMAUIGallery.Views.Layouts;
 
@@ -199,6 +200,16 @@ namespace AppMAUIGallery.Repositories
                         Title = "ListViewtPage",
                         Description = "Popular uma lista",
                         Page = typeof(ListViewPage)
+                    },
+                    new Component {
+                        Title = "CollectionViewPage",
+                        Description = "Popular uma Collection view list",
+                        Page = typeof(CollectionViewPage)
+                    },
+                    new Component {
+                        Title = "CarouselViewPage",
+                        Description = "Popular uma CarouselViewPage view",
+                        Page = typeof(CarouselViewPage)
                     }
 
                 }
