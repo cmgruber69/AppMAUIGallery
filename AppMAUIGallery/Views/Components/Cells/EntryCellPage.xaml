@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGallery.Views.Components.Cells.EntryCellPage"
+             Title="EntryCellPage">
+    <VerticalStackLayout Padding="10">
+        <Label 
+            Text="Entry Cell"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="30"/>
+
+        <Label 
+      Text="E mais performatico "
+      VerticalOptions="Center" 
+      HorizontalOptions="Start"
+      FontSize="20"/>
+
+        <TableView>
+            <TableSection Title="Lista de Coaboradores">
+                <EntryCell Label="Digite o seu nome" Placeholder="Nome" />
+                <EntryCell Label="Digite o seu sobrenome" />
+                <EntryCell Label="Digite o seu tele" />
+                <EntryCell Label="Digite o seu email" />
+            </TableSection>
+        </TableView>
+    </VerticalStackLayout>
+</ContentPage>

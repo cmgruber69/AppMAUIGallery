@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGallery.Views.Components.Cells.ViewCellPage"
+             Title="ViewCellPage">
+    <VerticalStackLayout Padding="10">
+        <Label 
+        Text="View Cell"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+        FontSize="30"/>
+
+        <Label 
+          Text="E a celula mais usada. Permite personalizar uma celula com um form nativo "
+          VerticalOptions="Center" 
+          HorizontalOptions="Start"
+          FontSize="20"/>   
+
+        <TableView>
+            <TableSection Title="Colaboradores">
+                <ViewCell>
+                    <Label 
+                        FontSize="Subtitle"
+                        Text="Aceita somemnte 1 elemento dentro da ViewCell."
+                        />
+
+                </ViewCell>
+            </TableSection>
+        </TableView>
+
+        <TableView>
+            <TableSection Title="Colaboradores">
+                <ViewCell>
+                    <Grid ColumnDefinitions="70, *">
+                        <Image Margin="10,0,0,0" Source="dotnet_bot.png"/>
+                        <VerticalStackLayout>
+                            <Label 
+                                Text="Com um grid podemos criar layout complexos com mais de 1 elemento"
+                                Margin="10,0,0,0"
+                              FontSize="Subtitle"
+                              />
+                            <Label 
+                                Text="dddd"
+                                Margin="10,0,0,0"
+                              FontSize="Subtitle"
+                              />
+                        </VerticalStackLayout>
+                       
+                    </Grid>
+                </ViewCell>
+            </TableSection>
+        </TableView>
+    </VerticalStackLayout>
+</ContentPage>

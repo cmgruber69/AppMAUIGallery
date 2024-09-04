@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGallery.Views.Components.Cells.TextCellPage"
+             Title="TextCellPage">
+    <VerticalStackLayout Padding="10">
+        <Label 
+            Text="TextCell"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="30"/>
+
+        <Label 
+             Text="E mais performatico que criar duas lables, usado dentro de tabelas"
+             VerticalOptions="Center" 
+             HorizontalOptions="Start"
+             FontSize="20"/>
+
+        <TableView>
+            <TableSection Title="Lista de Coaboradores">
+                <TextCell 
+                    Text="Cristian Gruber" 
+                    TextColor="Blue"
+                    Detail="Programador web, xx anos"
+                    DetailColor="LightGray"/>
+                <TextCell 
+                     Text="Tania Tacci" 
+                     TextColor="Blue"
+                     Detail="Secretária  web, xx anos"
+                     DetailColor="LightGray"/>
+
+            </TableSection>
+        </TableView>
+    </VerticalStackLayout>
+</ContentPage>

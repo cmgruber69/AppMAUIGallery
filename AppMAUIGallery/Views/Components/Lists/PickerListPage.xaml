@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGallery.Views.Components.Lists.PickerListPage"
+             Title="PickerListPage">
+    <VerticalStackLayout Padding="10">
+        <Label 
+            Text="PickerListPage"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="30"/>
+
+        <Picker
+            x:Name="PickerControl"
+            Title="Filmes usando tostring alterado"
+            SelectedIndex="1" />
+
+        <Picker
+              x:Name="PickerControl2"
+              Title="Filmes escolhendo um campo dos dados"
+              ItemDisplayBinding="{Binding Name}"
+              SelectedIndex="1" />
+
+        <Button Clicked="Button_Clicked" Text="Carregar" />
+
+
+    </VerticalStackLayout>
+</ContentPage>
