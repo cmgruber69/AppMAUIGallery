@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGallery.Views.Components.Forms.CheckBoxPage"
+             Title="CheckBoxPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="CheckBox page"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <HorizontalStackLayout Padding="20">
+            <CheckBox Color="Purple" CheckedChanged="CheckBox_CheckedChanged" />
+            <Label Text="C#" VerticalOptions="Center" />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Padding="20">
+            <CheckBox Color="Blue" CheckedChanged="CheckBox_CheckedChanged" />
+            <Label Text="C++" VerticalOptions="Center" />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Padding="20">
+            <CheckBox Color="Blue" CheckedChanged="CheckBox_CheckedChanged" />
+            <Label Text="Java" VerticalOptions="Center" />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Padding="20">
+            <CheckBox Color="Blue" CheckedChanged="CheckBox_CheckedChanged" />
+            <Label Text="Python" VerticalOptions="Center" />
+        </HorizontalStackLayout>
+
+        <Label x:Name="lblStatus" />
+        <Label x:Name="lblList" />
+    </VerticalStackLayout>
+</ContentPage>

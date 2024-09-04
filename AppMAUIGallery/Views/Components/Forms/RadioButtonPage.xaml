@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGallery.Views.Components.Forms.RadioButtonPage"
+             Title="RadioButtonPage">
+    <VerticalStackLayout Padding="10">
+        <Label 
+            Text="Radio Button Group"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <StackLayout>
+            <Label 
+                  Text="Qual linguagem de programacao voce mais gosta?"
+                  VerticalOptions="Center" 
+                  HorizontalOptions="Start" />
+            <RadioButton Content="C#" IsChecked="True" />
+            <RadioButton Content="C++" />
+            <RadioButton Content="Java" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label 
+           Text="Qual linguagem de programacao voce menos gosta?"
+           VerticalOptions="Center" 
+           HorizontalOptions="Start" />
+            <RadioButton Content="C#" CheckedChanged="RadioButton_CheckedChanged" />
+            <RadioButton Content="C++" CheckedChanged="RadioButton_CheckedChanged"  />
+            <RadioButton Content="Java" IsChecked="True" CheckedChanged="RadioButton_CheckedChanged"  />
+        </StackLayout>
+
+        <Label x:Name="lblResponse" />
+    </VerticalStackLayout>
+</ContentPage>

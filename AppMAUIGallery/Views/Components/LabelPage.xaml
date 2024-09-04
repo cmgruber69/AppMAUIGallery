@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGallery.Views.Components.LabelPage"
+             Title="LabelPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Lables"
+            VerticalOptions="Center" 
+            FontSize="30"
+            FontAttributes="Bold"
+            HorizontalOptions="Center" />
+
+
+        <Label 
+             Text="Uppercase"
+             VerticalOptions="Center" 
+             FontSize="20"
+             TextTransform="Uppercase"
+             HorizontalOptions="Center" />
+
+        <Label 
+              Text="Lowercase"
+              VerticalOptions="Center" 
+              FontSize="20"
+              TextTransform="Lowercase"
+              HorizontalOptions="Center" />
+
+        <Label 
+               Text="Underline"
+               VerticalOptions="Center" 
+               FontSize="20"
+               TextDecorations="Underline"
+               TextTransform="Lowercase"
+               HorizontalOptions="Center" />
+
+        <Label 
+            Text="Strikethrough"
+            VerticalOptions="Center" 
+            FontSize="20"
+            TextDecorations="Strikethrough"
+            TextTransform="Lowercase"
+            HorizontalOptions="Center" />
+
+        <Label TextType="Html">
+            <Label.Text>
+                <![CDATA[
+                    <b>texto bold em html</b>
+                <br/>
+                    <i>texto bold em html</i>
+                ]]>
+            </Label.Text>
+        </Label>
+
+    </VerticalStackLayout>
+</ContentPage>

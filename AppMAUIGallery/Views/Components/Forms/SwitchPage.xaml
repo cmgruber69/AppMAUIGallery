@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGallery.Views.Components.Forms.SwitchPage"
+             Title="SwitchPage">
+    <VerticalStackLayout Padding="10">
+        <Label 
+            Text="Switch Page"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Switch  />
+
+        <Switch OnColor="LightGrey" ThumbColor="DarkGrey" Conte  />
+    </VerticalStackLayout>
+</ContentPage>
