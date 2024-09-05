@@ -137,7 +137,7 @@
 	  <MauiXaml Update="Views\Components\Lists\ListViewPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Components\Lists\Models\CarouselViewPage.xaml">
+	  <MauiXaml Update="Views\Components\Lists\CarouselViewPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Components\Lists\PickerListPage.xaml">
