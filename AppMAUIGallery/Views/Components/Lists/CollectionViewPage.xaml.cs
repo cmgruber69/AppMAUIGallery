@@ -12,7 +12,7 @@ public partial class CollectionViewPage : ContentPage
     {
         InitializeComponent();
 
-        AddTenMovies();
+        //AddTenMovies();
         CollectionViewControl.ItemsSource = MovieList.GetGroupList();
     }
 
@@ -69,6 +69,10 @@ public partial class CollectionViewPage : ContentPage
 
     private void CollectionViewControl_Scrolled(object sender, ItemsViewScrolledEventArgs e)
     {
+        if (DeviceInfo.Platform != DevicePlatform.WinUI)
+            return;
+
+
         LblScrollStatus.Text = $"Posicionamento: {e.VerticalOffset} - Espaçamento: {e.VerticalDelta}";
     }
 }

@@ -198,20 +198,29 @@ namespace AppMAUIGallery.Repositories
                     },
                     new Component {
                         Title = "ListViewtPage",
-                        Description = "Popular uma lista",
+                        Description = "Forma mais popular de criar Listas simples. Menos opcoes que collectionview e mais antiga.",
                         Page = typeof(ListViewPage)
                     },
                     new Component {
                         Title = "CollectionViewPage",
-                        Description = "Popular uma Collection view list",
+                        Description = "Forma mais atual de criar listas com funcao virtualize e muitas funcionalidades. Para listas complexas",
                         Page = typeof(CollectionViewPage)
                     },
                     new Component {
                         Title = "CarouselViewPage",
                         Description = "Popular uma CarouselViewPage view",
                         Page = typeof(CarouselViewPage)
+                    },
+                    new Component {
+                        Title = "BindableLayout (Atributo)",
+                        Description = "Permitir que layouts possam apresentar listas",
+                        Page = typeof(BindableLayoutPage)
+                    },
+                    new Component {
+                        Title = "DataTemplateSelectorPage (Classe)",
+                        Description = "Permitir que os itens possam apresentar layouts diferentes.",
+                        Page = typeof(DataTemplateSelectorPage)
                     }
-
                 }
             });
 

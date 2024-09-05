@@ -10,6 +10,12 @@
             HorizontalOptions="Center"
             FontSize="30"/>
 
+        <Label 
+              Text="É a forma mais moderna de criar listas. Tem mais funcoes que a listview, mais performatica com mais funcionalidades. Nao funciona bem no windows, apenas no Android e IOS"
+              VerticalOptions="Center" 
+              HorizontalOptions="Start"
+              FontSize="20"/>
+
         <Grid>
             <RefreshView RefreshColor="Purple" Refreshing="RefreshView_Refreshing">
                 <CollectionView
@@ -24,7 +30,7 @@
                         <Label x:Name="LblSelectedMovies" />
                     </CollectionView.Header>
                     <CollectionView.ItemsLayout>
-                        <LinearItemsLayout Orientation="Vertical" />
+                        <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
                     </CollectionView.ItemsLayout>
                     <CollectionView.GroupHeaderTemplate>
                         <DataTemplate>
