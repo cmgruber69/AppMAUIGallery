@@ -1,4 +1,4 @@
-using AppMAUIGallery.Views.Components.Lists.Models;
+using AppMAUIGallery.Views.Lists.Models;
 
 namespace AppMAUIGallery.Views.Components.Lists;
 

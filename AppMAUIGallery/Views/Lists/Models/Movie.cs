@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppMAUIGallery.Views.Components.Lists.Models
+namespace AppMAUIGallery.Views.Lists.Models
 {
     public class Movie
     {
         public int Id { get; set; }
-        public String Name { get; set; }
-        public String Description { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
         public TimeSpan Duration { get; set; }
         public short LaunchYear { get; set; }
 

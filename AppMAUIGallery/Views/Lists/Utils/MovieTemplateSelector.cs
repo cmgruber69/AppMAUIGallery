@@ -1,6 +1,6 @@
-﻿using AppMAUIGallery.Views.Components.Lists.Models;
+﻿using AppMAUIGallery.Views.Lists.Models;
 
-namespace AppMAUIGallery.Views.Components.Lists.Utils
+namespace AppMAUIGallery.Views.Lists.Utils
 {
     public class MovieTemplateSelector : DataTemplateSelector
     {
@@ -10,7 +10,7 @@ namespace AppMAUIGallery.Views.Components.Lists.Utils
         {
             Movie movie = (Movie)item;
 
-            return (movie.Duration.Hours > 1) ? TemplateLongMovie : TemplateDefault;
+            return movie.Duration.Hours > 1 ? TemplateLongMovie : TemplateDefault;
         }
     }
 }

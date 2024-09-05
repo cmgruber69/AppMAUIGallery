@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppMAUIGallery.Views.Components.Lists.DataTemplateSelectorPage"
-             xmlns:utils="clr-namespace:AppMAUIGallery.Views.Components.Lists.Utils"
+             xmlns:utils="clr-namespace:AppMAUIGallery.Views.Lists.Utils"
              Title="DataTemplateSelectorPage">
     <ContentPage.Resources>
         <DataTemplate x:Key="DataTemplateMovieDefault">

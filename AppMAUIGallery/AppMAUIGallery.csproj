@@ -71,22 +71,22 @@
 	  <MauiXaml Update="AppFlyout.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Components\BoxViewPage.xaml">
+	  <MauiXaml Update="Views\Components\Mains\BoxViewPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Components\Cells\EntryCellPage.xaml">
+	  <MauiXaml Update="Views\Cells\EntryCellPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Components\Cells\ImageCellPage.xaml">
+	  <MauiXaml Update="Views\Cells\ImageCellPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Components\Cells\SwitchCellPage.xaml">
+	  <MauiXaml Update="Views\Cells\SwitchCellPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Components\Cells\TextCellPage.xaml">
+	  <MauiXaml Update="Views\Cells\TextCellPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Components\Cells\ViewCellPage.xaml">
+	  <MauiXaml Update="Views\Cells\ViewCellPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Components\Forms\CheckBoxPage.xaml">
@@ -122,31 +122,40 @@
 	  <MauiXaml Update="Views\Components\Forms\TimePickerPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Components\LabelPage.xaml">
+	  <MauiXaml Update="Views\Components\Mains\ButtonPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Components\Lists\BindableLayoutPage.xaml">
+	  <MauiXaml Update="Views\Components\Mains\ImageButtonPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Components\Lists\CollectionViewPage.xaml">
+	  <MauiXaml Update="Views\Components\Mains\ImagePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Components\Lists\DataTemplateSelectorPage.xaml">
+	  <MauiXaml Update="Views\Components\Mains\LabelPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Components\Lists\ListViewPage.xaml">
+	  <MauiXaml Update="Views\Lists\BindableLayoutPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Components\Lists\CarouselViewPage.xaml">
+	  <MauiXaml Update="Views\Lists\CollectionViewPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Components\Lists\PickerListPage.xaml">
+	  <MauiXaml Update="Views\Lists\DataTemplateSelectorPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Components\Lists\TableViewPage.xaml">
+	  <MauiXaml Update="Views\Lists\ListViewPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Components\Shells\AppShell.xaml">
+	  <MauiXaml Update="Views\Lists\CarouselViewPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lists\PickerListPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lists\TableViewPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Shells\AppShell.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Components\Visuals\BorderPage.xaml">
@@ -179,7 +188,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Utils\" />
+	  <Folder Include="Views\Styles\" />
 	</ItemGroup>
 
 </Project>

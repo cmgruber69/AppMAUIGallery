@@ -1,4 +1,4 @@
-using AppMAUIGallery.Views.Components.Lists.Models;
+using AppMAUIGallery.Views.Lists.Models;
 using System.Collections.ObjectModel;
 using System.Text;
 
