@@ -3,6 +3,7 @@ using AppMAUIGallery.Views.Components;
 using AppMAUIGallery.Views.Components.Cells;
 using AppMAUIGallery.Views.Components.Forms;
 using AppMAUIGallery.Views.Components.Lists;
+using AppMAUIGallery.Views.Components.Mains;
 using AppMAUIGallery.Views.Components.Visuals;
 using AppMAUIGallery.Views.Layouts;
 

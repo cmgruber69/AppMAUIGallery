@@ -3,17 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppMAUIGallery.Views.Components.Mains.BoxViewPage"
              Title="BoxViewPage">
-    <VerticalStackLayout Padding="20" Spacing="10">
-        <Label 
-            Text="Boxview"
-            VerticalOptions="Center" 
-            FontSize="30"
-            FontAttributes="Bold"
-            HorizontalOptions="Center" />
-
-        <BoxView Color="Blue" HeightRequest="3"/>
-        <BoxView Color="Blue" HeightRequest="100" WidthRequest="100"/>
-        <BoxView Color="Blue" HeightRequest="100" WidthRequest="100" CornerRadius="50"/>
-
+    <VerticalStackLayout Padding="10">
+        <BoxView Color="Black" HeightRequest="3" />
+        <BoxView Color="Blue" WidthRequest="100" HeightRequest="100" />
+        <BoxView Color="Green" WidthRequest="200" HeightRequest="150" />
+        <BoxView Color="Red" CornerRadius="50" HeightRequest="100" WidthRequest="100" />
     </VerticalStackLayout>
 </ContentPage>

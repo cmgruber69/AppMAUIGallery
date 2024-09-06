@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppMAUIGallery.Views.Menu"
-             Title="Menu"
-             BackgroundColor="#F3F3F3">
+<ContentPage
+    x:Class="AppMAUIGallery.Views.Menu"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Menu"
+    BackgroundColor="#F3F3F3">
     <!--<ScrollView>
         <VerticalStackLayout Spacing="10" Padding="20,0,5,5">
             <Label
@@ -24,7 +25,10 @@
         </VerticalStackLayout>
     </ScrollView>-->
 
-    <CollectionView x:Name="MenuCollection" IsGrouped="True" EmptyView="Nenhum registro">
+    <CollectionView
+        x:Name="MenuCollection"
+        EmptyView="Nenhum registro"
+        IsGrouped="True">
         <CollectionView.Header>
             <VerticalStackLayout Padding="20,0" Spacing="10">
                 <Label
@@ -40,20 +44,18 @@
                     </Label.GestureRecognizers>
                 </Label>
                 <Label Text="Extra" />
-                <Label Text="Créditos" />
             </VerticalStackLayout>
         </CollectionView.Header>
         <CollectionView.GroupHeaderTemplate>
             <DataTemplate>
-                <Label
-                    Margin="16,10"
-                    FontAttributes="Bold"
-                    Text="{Binding Name}" />
+                <VerticalStackLayout Padding="10,8,5,10" BackgroundColor="DarkGray">
+                    <Label FontAttributes="Bold" Text="{Binding Name}" />
+                </VerticalStackLayout>
             </DataTemplate>
         </CollectionView.GroupHeaderTemplate>
         <CollectionView.ItemTemplate>
             <DataTemplate>
-                <VerticalStackLayout Padding="40,10,20,10">
+                <VerticalStackLayout Padding="20,10,20,10">
                     <VerticalStackLayout.GestureRecognizers>
                         <TapGestureRecognizer CommandParameter="{Binding .}" Tapped="OnTapComponent" />
                     </VerticalStackLayout.GestureRecognizers>
