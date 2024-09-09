@@ -9,20 +9,48 @@
 
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent
-        Title="pagina 1"
-        ContentTemplate="{DataTemplate pages:Page1}"
-        Icon="clock.png" />
+            Title="Page 1"
+            ContentTemplate="{DataTemplate pages:Page1}"
+            Icon="one.png"
+            Route="page1" />
+
         <ShellContent
-        Title="pagina 2"
-        ContentTemplate="{DataTemplate pages:Page2}"
-        Icon="clock.png" />
+            Title="Page 2"
+            ContentTemplate="{DataTemplate pages:Page2}"
+            Icon="two.png"
+            Route="page2" />
+
         <ShellContent
-        Title="pagina 3"
-        ContentTemplate="{DataTemplate pages:Page3}"
-        Icon="clock.png" />
+            Title="Page 3"
+            ContentTemplate="{DataTemplate pages:Page3}"
+            Icon="three.png"
+            Route="page3" />
+
+        <Tab Title="4 and 5" Icon="pages4u5.png">
+
+            <ShellContent
+                Title="Page 4"
+                Icon="four.png"
+                Route="page4">
+                <pages:Page4 />
+            </ShellContent>
+
+            <ShellContent
+                Title="Page 5"
+                Icon="five.png"
+                Route="page5">
+                <pages:Page5 />
+            </ShellContent>
+
+        </Tab>
     </FlyoutItem>
-    
-    
+
+    <MenuItem
+        Clicked="BackToGallery"
+        IconImageSource="out.png"
+        Text="Out" />
+
+
     <!--<TabBar>
         <ShellContent
             Title="pagina 1"
@@ -37,9 +65,9 @@
             ContentTemplate="{DataTemplate pages:Page3}"
             Icon="clock.png" />
     </TabBar>-->
-    
-    
-    
-    
-    
+
+
+
+
+
 </Shell>

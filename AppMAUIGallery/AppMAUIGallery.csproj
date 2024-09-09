@@ -59,6 +59,15 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\clock.svg" />
+	  <None Remove="Resources\Images\five.svg" />
+	  <None Remove="Resources\Images\four.svg" />
+	  <None Remove="Resources\Images\one.svg" />
+	  <None Remove="Resources\Images\out.svg" />
+	  <None Remove="Resources\Images\pages4u5.svg" />
+	  <None Remove="Resources\Images\poweroff.png" />
+	  <None Remove="Resources\Images\poweron.png" />
+	  <None Remove="Resources\Images\three.svg" />
+	  <None Remove="Resources\Images\two.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -69,6 +78,15 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="AppFlyout.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Styles\DarkTheme.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Styles\LightTheme.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Animations\BasicAnimation.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Components\Mains\BoxViewPage.xaml">
@@ -194,10 +212,43 @@
 	  <MauiXaml Update="Views\Shells\Pages\Page3.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Shells\Pages\Page4.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Shells\Pages\Page4Step1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Shells\Pages\Page4Step2.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Shells\Pages\Page5.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Styles\ApplyDerivedTypes.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Styles\AppThemeBindingPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Styles\GlobalStyle.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Styles\ImplicitExplicitStyles.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Styles\InheritanceStyle.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Styles\StaticDynamicResource.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Styles\StyleClassPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Styles\Theme.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Styles\VisualStateManagerPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMAUIGallery.Views.Shells.Pages.Page4Step1"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Page4Step1">
+    <VerticalStackLayout Padding="10" Spacing="10">
+        <Label
+            FontAttributes="Bold"
+            FontSize="30"
+            HorizontalOptions="Center"
+            Text="Page4 Step1"
+            VerticalOptions="Center" />
+
+        <Label
+            FontSize="20"
+            HorizontalOptions="Center"
+            Text="Example from a page that goes to another page like a step process using relative route and absolute route. See code behind"
+            VerticalOptions="Center" />
+
+        <Button Clicked="GoBackToPage4" Text="Go back to Page 4" />
+
+        <Button Clicked="GoToStep2" Text="Go to Page 4 - Step 2" />
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
