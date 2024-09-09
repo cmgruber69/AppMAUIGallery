@@ -1,8 +1,45 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppMAUIGallery.Views.Components.Shells.AppShell"
-             Title="AppShell">
+<Shell
+    x:Class="AppMAUIGallery.Views.Components.Shells.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:AppMAUIGallery.Views.Shells.Pages"
+    Title="AppShell">
 
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent
+        Title="pagina 1"
+        ContentTemplate="{DataTemplate pages:Page1}"
+        Icon="clock.png" />
+        <ShellContent
+        Title="pagina 2"
+        ContentTemplate="{DataTemplate pages:Page2}"
+        Icon="clock.png" />
+        <ShellContent
+        Title="pagina 3"
+        ContentTemplate="{DataTemplate pages:Page3}"
+        Icon="clock.png" />
+    </FlyoutItem>
+    
+    
+    <!--<TabBar>
+        <ShellContent
+            Title="pagina 1"
+            ContentTemplate="{DataTemplate pages:Page1}"
+            Icon="clock.png" />
+        <ShellContent
+            Title="pagina 2"
+            ContentTemplate="{DataTemplate pages:Page2}"
+            Icon="clock.png" />
+        <ShellContent
+            Title="pagina 3"
+            ContentTemplate="{DataTemplate pages:Page3}"
+            Icon="clock.png" />
+    </TabBar>-->
+    
+    
+    
+    
     
 </Shell>

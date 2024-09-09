@@ -185,6 +185,15 @@
 	  <MauiXaml Update="Views\Menu.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Shells\Pages\Page1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Shells\Pages\Page2.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Shells\Pages\Page3.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Styles\GlobalStyle.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

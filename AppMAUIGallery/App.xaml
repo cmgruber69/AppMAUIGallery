@@ -6,7 +6,7 @@
     xmlns:local="clr-namespace:AppMAUIGallery">
     <Application.Resources>
         <ResourceDictionary>
-            <!--Global Style : can be used anywhere. Look GlobalStyle page-->
+            <!--  Global Style : can be used anywhere. Look GlobalStyle page  -->
             <Style x:Key="GlobalTitle" TargetType="Label">
                 <Setter Property="FontSize" Value="20" />
                 <Setter Property="TextColor" Value="Red" />
