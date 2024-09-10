@@ -39,7 +39,7 @@ namespace AppMAUIGallery.Repositories
             var components = new List<Component> {
                 new Component {
                     Title = "Shell",
-                    Description = "Uma nova forma de estruturar as páginas do nosso projeto",
+                    Description = "A new way to structure our navigation project pages",
                     Page = typeof(AppShell),
                     IsReplaceMainPage = true
                 },
@@ -72,25 +72,25 @@ namespace AppMAUIGallery.Repositories
             var components = new List<Component> {
                 new Component {
                     Title = "StackLayout",
-                    Description = "Organização sequencial dos elementos.",
+                    Description = "Sequential organization of elements.",
                     Page = typeof(StackLayoutPage)
                 },
                 new Component
                 {
                     Title = "Grid",
-                    Description = "Organiza os elementos dentro de uma tabela.",
+                    Description = "Organizes elements within a table.",
                     Page = typeof(GridLayoutPage)
                 },
                 new Component
                 {
                     Title = "AbsoluteLayout",
-                    Description = "Liberdade total para posicionar e dimensionar os elementos na tela.",
+                    Description = "Complete freedom to position and size elements on the screen.",
                     Page = typeof(AbsoluteLayoutPage)
                 },
                 new Component
                 {
                     Title = "FlexLayout",
-                    Description = "Organiza os elementos de forma sequencial com muitas opções de personalização.",
+                    Description = "Organizes elements sequentially with many customization options.",
                     Page = typeof(FlexLayoutPage)
                 }
             };
@@ -101,6 +101,7 @@ namespace AppMAUIGallery.Repositories
             _components.AddRange(components);
             _groupComponents.Add(group);
         }
+
         private void LoadControls()
         {
             var components = new List<Component>
@@ -108,36 +109,36 @@ namespace AppMAUIGallery.Repositories
                 new Component
                 {
                     Title = "BoxView",
-                    Description = "Um componente que cria um caixa para ser apresentada.",
+                    Description = "A component that creates a box to be displayed.",
                     Page = typeof(BoxViewPage)
                 },
                 new Component
                 {
                     Title = "Label",
-                    Description = "Apresenta um texto na tela.",
+                    Description = "Displays text on the screen.",
                     Page = typeof(LabelPage)
                 },
                 new Component
                 {
                     Title = "Button",
-                    Description = "Apresenta um botão na tela.",
+                    Description = "Displays a button on the screen.",
                     Page = typeof(ButtonPage)
                 },
                 new Component
                 {
                     Title = "Image",
-                    Description = "Apresenta uma imagem na tela.",
+                    Description = "Displays an image on the screen.",
                     Page = typeof(ImagePage)
                 },
                 new Component
                 {
                     Title = "ImageButton",
-                    Description = "Apresenta uma imagem com comportamento de botão.",
+                    Description = "Displays an image with button behavior.",
                     Page = typeof(ImageButtonPage)
                 }
             };
 
-            var group = new GroupComponent() { Name = "Controles (Views)" };
+            var group = new GroupComponent() { Name = "Controls (Views)" };
             group.AddRange(components);
 
             _components.AddRange(components);
@@ -149,22 +150,22 @@ namespace AppMAUIGallery.Repositories
             var components = new List<Component> {
                 new Component {
                     Title = "Frame",
-                    Description = "Caixa que envolve outros elementos.",
+                    Description = "Box that surrounds other elements.",
                     Page = typeof(FramePage)
                 },
                 new Component {
                     Title = "Border",
-                    Description = "Caixa que envolve outros elementos.",
+                    Description = "Box that surrounds other elements..",
                     Page = typeof(BorderPage)
                 },
                 new Component {
                     Title = "Shadow",
-                    Description = "Adiciona uma sobra ao elemento.",
+                    Description = "Adds a shadow to the element.",
                     Page = typeof(ShadowPage)
                 }
             };
 
-            var group = new GroupComponent() { Name = "Visuais" };
+            var group = new GroupComponent() { Name = "Visuals" };
             group.AddRange(components);
 
             _components.AddRange(components);
@@ -176,57 +177,57 @@ namespace AppMAUIGallery.Repositories
             var components = new List<Component> {
                 new Component {
                     Title = "Entry",
-                    Description = "Cria uma caixa de entrada de texto.",
+                    Description = "Creates a text input box.",
                     Page = typeof(EntryPage)
                 },
                 new Component {
                     Title = "Editor",
-                    Description = "Cria uma caixa de entrada de texto de multiplas linhas.",
+                    Description = "Creates a multi-line text input box.",
                     Page = typeof(EditorPage)
                 },
                 new Component {
                     Title = "Checkbox",
-                    Description = "Cria uma caixa de marcação.",
+                    Description = "Creates a checkbox.",
                     Page = typeof(CheckBoxPage)
                 },
                 new Component {
                     Title = "RadioButton",
-                    Description = "Cria uma caixa de marcação de escolha única.",
+                    Description = "Creates a single choice checkbox.",
                     Page = typeof(RadioButtonPage)
                 },
                 new Component {
                     Title = "Switch",
-                    Description = "Caixa de marcação booleana.",
+                    Description = "Boolean checkbox. Switch On-Off",
                     Page = typeof(SwitchPage)
                 },
                 new Component {
                     Title = "Stepper",
-                    Description = "Cria opções de incrementar ou decrementar um número.",
+                    Description = "Creates options to increment or decrement a number.",
                     Page = typeof(StepperPage)
                 },
                 new Component {
                     Title = "Slider",
-                    Description = "Cria barra que incrementar ou decrementar um número.",
+                    Description = "Creates a bar that increments or decrements a number.",
                     Page = typeof(SliderPage)
                 },
                 new Component {
                     Title = "TimePicker",
-                    Description = "Seleção da Hora e do Minuto.",
+                    Description = "Hour and Minute Selection.",
                     Page = typeof(TimePickerPage)
                 },
                 new Component {
                     Title = "DatePicker",
-                    Description = "Seleção da Data.",
+                    Description = "Date Selection.",
                     Page = typeof(DatePickerPage)
                 },
                 new Component {
                     Title = "SearchBar",
-                    Description = "Campo de entrada de texto para pesquisa.",
+                    Description = "Text input field for search function.",
                     Page = typeof(SearchBarPage)
                 },
                 new Component {
                     Title = "Picker",
-                    Description = "Selecionar um item da lista.",
+                    Description = "Select an item from the list.",
                     Page = typeof(PickerPage)
                 },
             };
@@ -243,32 +244,32 @@ namespace AppMAUIGallery.Repositories
             var components = new List<Component> {
                 new Component {
                     Title = "TextCell",
-                    Description = "Apresenta até duas labels onde uma é destinada ao título e outra a descrição.",
+                    Description = "It presents up to two labels, one for the title and the other for the description.",
                     Page = typeof(TextCellPage)
                 },
                 new Component {
                     Title = "ImageCell",
-                    Description = "Apresenta uma imagem com duas labels onde uma é destinada ao título e outra a descrição.",
+                    Description = "It presents an image with two labels, one for the title and the other for the description.",
                     Page = typeof(ImageCellPage)
                 },
                 new Component {
                     Title = "SwitchCell",
-                    Description = "Apresenta uma label em conjunto com um switch.",
+                    Description = "It presents a label together with a switch.",
                     Page = typeof(SwitchCellPage)
                 },
                 new Component {
                     Title = "EntryCell",
-                    Description = "Apresenta uma label em conjunto com um entry.",
+                    Description = "Displays a label together with an entry.",
                     Page = typeof(EntryCellPage)
                 },
                 new Component {
                     Title = "ViewCell",
-                    Description = "Permite criar a nossa célular com layout personalizado.",
+                    Description = "Allows you to create your own cell with a custom layout.",
                     Page = typeof(ViewCellPage)
                 },
             };
 
-            var group = new GroupComponent() { Name = "Células" };
+            var group = new GroupComponent() { Name = "Cells" };
             group.AddRange(components);
 
             _components.AddRange(components);
@@ -280,42 +281,42 @@ namespace AppMAUIGallery.Repositories
             var components = new List<Component> {
                 new Component {
                     Title = "TableView",
-                    Description = "Apresenta células em linhas separadas e permite agrupar por seção",
+                    Description = "Displays cells in separate rows and allows grouping by section",
                     Page = typeof(TableViewPage)
                 },
                 new Component {
                     Title = "Picker",
-                    Description = "Apresenta uma lista de seleção única",
+                    Description = "Presents a single selection list",
                     Page = typeof(PickerListPage)
                 },
                 new Component {
                     Title = "ListView",
-                    Description = "Apresenta uma lista de itens.",
+                    Description = "Displays a list of items. Most common list.",
                     Page = typeof(ListViewPage)
                 },
                 new Component {
                     Title = "CollectionView",
-                    Description = "Apresenta uma lista de itens.",
+                    Description = "Displays a list of items. New approach, more performance and designed for android and IOS",
                     Page = typeof(CollectionViewPage)
                 },
                 new Component {
                     Title = "CarouselView",
-                    Description = "Apresenta uma lista de itens horizontais com navegação lateral.",
+                    Description = "Presents a horizontal list of items with side navigation. Good tool for image galleries",
                     Page = typeof(CarouselViewPage)
                 },
                 new Component {
                     Title = "BindableLayout (Atributo)",
-                    Description = "Permite que os layouts possam apresentar nossas listas e coleções.",
+                    Description = "Allows layouts to present our lists and collections.",
                     Page = typeof(BindableLayoutPage)
                 },
                 new Component {
                     Title = "DataTemplateSelector (Classe)",
-                    Description = "Permitir que os itens possam ser apresetados com layouts diferentes.",
+                    Description = "Allow items to be presented with different layouts.",
                     Page = typeof(DataTemplateSelectorPage)
                 }
             };
 
-            var group = new GroupComponent() { Name = "Listas e Coleções" };
+            var group = new GroupComponent() { Name = "Lists and Collections" };
             group.AddRange(components);
 
             _components.AddRange(components);
@@ -327,47 +328,47 @@ namespace AppMAUIGallery.Repositories
             var components = new List<Component> {
                 new Component {
                     Title = "Implicit & Explicit Styles",
-                    Description = "Explicar como funciona os estilos.",
+                    Description = "Explain how styles work.",
                     Page = typeof(ImplicitExplicitStyles)
                 },
                 new Component {
                     Title = "Global Style",
-                    Description = "Como criar estilos para todo o seu projeto.",
+                    Description = "How to create styles for your entire project.",
                     Page = typeof(GlobalStyle)
                 },
                 new Component {
                     Title = "ApplyToDerivedTypes",
-                    Description = "Aplicar um estilo aos elementos derividos da classe/component atual.",
+                    Description = "Apply a style to elements derived from the current class/component.",
                     Page = typeof(ApplyDerivedTypes)
                 },
                 new Component {
                     Title = "Inheritance Style",
-                    Description = "Como criar estilos derivados de outros.",
+                    Description = "How to create styles derived from others.",
                     Page = typeof(InheritanceStyle)
                 },
                 new Component {
                     Title = "Style Class",
-                    Description = "Cria classes de estilos para serem aplicado aos componentes",
+                    Description = "Creates style classes to be applied to components.",
                     Page = typeof(StyleClassPage)
                 },
                 new Component {
                     Title = "StaticResource/DynamicResource",
-                    Description = "Define se o estilo pode ser alterado em tempo real.",
+                    Description = "Defines whether the style can be changed in real time.",
                     Page = typeof(StaticDynamicResource)
                 },
                 new Component {
                     Title = "Theme",
-                    Description = "Define um tema padrão para o nosso projeto.",
+                    Description = "Sets a default theme for our project.",
                     Page = typeof(Theme)
                 },
                 new Component {
                     Title = "AppThemeBinding",
-                    Description = "Adapta o tema ao modo claro/escuro do Sistema Operacional.",
+                    Description = "Adapts the theme to the light/dark mode of the Operating System.",
                     Page = typeof(AppThemeBindingPage)
                 },
                 new Component {
                     Title = "Visual State Manager (VSM)",
-                    Description = "Personaliza a apresentação de acordo com o estado do componente.",
+                    Description = "Customizes the presentation according to the state of the component.",
                     Page = typeof(VisualStateManagerPage)
                 },
             };
@@ -384,7 +385,7 @@ namespace AppMAUIGallery.Repositories
             var components = new List<Component> {
                 new Component {
                     Title = "Basic Animation",
-                    Description = "Animação básica do .NET MAUI.",
+                    Description = "Basic .NET MAUI animation.",
                     Page = typeof(BasicAnimation)
                 },
             };

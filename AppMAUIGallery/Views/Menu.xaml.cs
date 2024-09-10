@@ -12,7 +12,7 @@ public partial class Menu : ContentPage
 	{
 		InitializeComponent();
 
-        //Forma inicial de fazer o menu
+        //One simple approach of menu
         //var categories = new CategoryRepository().GetCategories();
 
         //      foreach (var category in categories)
@@ -55,7 +55,7 @@ public partial class Menu : ContentPage
         MenuCollection.ItemsSource = _repository.GetGroupComponents();
     }
 
-    //Forma inicial de fazer o menu
+    //Another simple approach of menu
     //private void OnTapComponent(object sender, EventArgs e)
     //{
     //    //Forma inicial de fazer o menu
@@ -82,7 +82,7 @@ public partial class Menu : ContentPage
         }
     }
 
-    private void OnTapInicio(object sender, TappedEventArgs e)
+    private void OnStartTap(object sender, TappedEventArgs e)
     {
         ((FlyoutPage)App.Current.MainPage).Detail = new NavigationPage(new AppMAUIGallery.Views.MainPage());
         ((FlyoutPage)App.Current.MainPage).IsPresented = false;

@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppMAUIGallery.Views.Animations.BasicAnimation"
-             Title="BasicAnimation">
+<ContentPage
+    x:Class="AppMAUIGallery.Views.Animations.BasicAnimation"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="BasicAnimation">
     <ScrollView>
         <VerticalStackLayout Spacing="10">
             <Border HeightRequest="300">
                 <Image
-                x:Name="Image"
-                Source="dotnet_bot.png"
-                WidthRequest="100" />
+                    x:Name="Image"
+                    Source="dotnet_bot.png"
+                    WidthRequest="100" />
             </Border>
 
-            <Button Clicked="Normal" Text="Normal" />
-            <Button Clicked="Aumentar" Text="Aumentar" />
-            <Button Clicked="Diminuir" Text="Diminuir" />
-            <Button Clicked="Mover" Text="Mover" />
-            <Button Clicked="Rotacao" Text="Rotação" />
-            <Button Clicked="Transparencia" Text="Transparência" />
+            <Button Clicked="Standard" Text="Standard" />
+            <Button Clicked="Increase" Text="Increase" />
+            <Button Clicked="Decrease" Text="Decrease" />
+            <Button Clicked="Move" Text="Move" />
+            <Button Clicked="Rotate" Text="Rotate" />
+            <Button Clicked="Transparency" Text="Transparency" />
             <Border Margin="10" Padding="10">
-                <VerticalStackLayout>
-                    <Button Clicked="Sequencial" Text="Sequencial" />
-                    <Button Clicked="Paralelo" Text="Paralelo" />
-                    <Button Clicked="Cancelamento" Text="Cancelamento" />
+                <VerticalStackLayout Spacing="10">
+                    <Button Clicked="Sequence" Text="Sequential" />
+                    <Button Clicked="Parallel" Text="Parallel" />
+                    <Button Clicked="Cancellation" Text="Cancel" />
                 </VerticalStackLayout>
             </Border>
 
             <Border Margin="10" Padding="10">
-                <VerticalStackLayout>
-                    <Button Clicked="Custom" Text="Animação customizada" />
-                    <Button Clicked="Cor" Text="Animação da Cor" />
+                <VerticalStackLayout Spacing="10">
+                    <Button Clicked="Custom" Text="Custom animation" />
+                    <Button Clicked="ColorChange" Text="Color Animation" />
                 </VerticalStackLayout>
             </Border>
         </VerticalStackLayout>

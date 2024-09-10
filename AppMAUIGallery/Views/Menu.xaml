@@ -27,7 +27,7 @@
 
     <CollectionView
         x:Name="MenuCollection"
-        EmptyView="Nenhum registro"
+        EmptyView="No registers"
         IsGrouped="True">
         <CollectionView.Header>
             <VerticalStackLayout Padding="20,0" Spacing="10">
@@ -38,9 +38,9 @@
                     HorizontalOptions="Center"
                     Text="MAUI - Gallery"
                     VerticalOptions="Center" />
-                <Label Text="Início">
+                <Label Text="Home">
                     <Label.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnTapInicio" />
+                        <TapGestureRecognizer Tapped="OnStartTap" />
                     </Label.GestureRecognizers>
                 </Label>
                 <Label Text="Extra" />

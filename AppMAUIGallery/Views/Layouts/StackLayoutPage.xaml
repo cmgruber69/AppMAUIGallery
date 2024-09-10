@@ -4,22 +4,25 @@
              x:Class="AppMAUIGallery.Views.Layouts.StackLayoutPage"
              Title="StackLayoutPage">
     <StackLayout Orientation="Vertical" Margin="20" Padding="20" BackgroundColor="AliceBlue" Spacing="10">
-        <Label Text="Olá Mundo!"/>
-
+        
+        <Label Text="Hello World!"/>
 
         <StackLayout Spacing="10" Orientation="Horizontal">
-            <Button Text="Olá mundo 1!" HorizontalOptions="Start" />
-            <Button Text="Olá mundo 2!" HorizontalOptions="Start"/>
+            <Button Text="Hello World 1!" HorizontalOptions="Start" />
+            <Button Text="Hello World 2!" HorizontalOptions="Start"/>
         </StackLayout>
 
         <VerticalStackLayout Spacing="10" Padding="10"  BackgroundColor="Aquamarine">
-            <Label Text="Olá Mundo 1!" />
-            <Label Text="Olá Mundo 2!" />
+            <Label Text="Hello World 3!" />
+            <Label Text="Hello World 4!" />
         </VerticalStackLayout>
-        <HorizontalStackLayout Spacing="20" Padding="10"  BackgroundColor="Aquamarine">
-            <Label Text="Olá Mundo 1!" />
-            <Label Text="Olá Mundo 2!" />
+        
+        <HorizontalStackLayout Spacing="20" Padding="10"  BackgroundColor="Beige">
+            <Label Text="Hello World 5!" />
+            <Label Text="Hello World 6!" />
         </HorizontalStackLayout>
-        <Button Text="Olá mundo!" WidthRequest="200" HeightRequest="100" HorizontalOptions="Center" />
+        
+        <Button Text="Hello World 7!" WidthRequest="200" HeightRequest="100" HorizontalOptions="Center" />
+        
     </StackLayout>
 </ContentPage>
