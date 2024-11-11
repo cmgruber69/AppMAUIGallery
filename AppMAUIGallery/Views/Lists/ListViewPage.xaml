@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppMAUIGallery.Views.Components.Lists.ListViewPage"
-             Title="ListViewPage">
-    
+<ContentPage
+    x:Class="AppMAUIGallery.Views.Components.Lists.ListViewPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ListViewPage">
+
     <VerticalStackLayout>
-        <Label 
-            Text="ListView Control"
-            VerticalOptions="Center" 
+        <Label
+            FontSize="30"
             HorizontalOptions="Center"
-            FontSize="30"/>
-        
-        
+            Text="ListView Control"
+            VerticalOptions="Center" />
+
+
         <ListView
-        x:Name="ListViewControl"
-        HasUnevenRows="True"
-        IsGroupingEnabled="True"
-        IsPullToRefreshEnabled="True"
-        ItemSelected="ListViewControl_ItemSelected"
-        Refreshing="ListViewControl_Refreshing"
-        SelectionMode="Single"
-        SeparatorColor="Blue"
-        SeparatorVisibility="Default">
+            x:Name="ListViewControl"
+            HasUnevenRows="True"
+            IsGroupingEnabled="True"
+            IsPullToRefreshEnabled="True"
+            ItemSelected="ListViewControl_ItemSelected"
+            Refreshing="ListViewControl_Refreshing"
+            SelectionMode="Single"
+            SeparatorColor="Blue"
+            SeparatorVisibility="Default">
             <ListView.Header>
                 <Button Clicked="Button_Clicked" Text="Carregar" />
             </ListView.Header>
@@ -30,9 +31,9 @@
                     <ViewCell>
                         <VerticalStackLayout Padding="10" BackgroundColor="Purple">
                             <Label
-                            FontAttributes="Bold"
-                            Text="{Binding CompanyName}"
-                            TextColor="White" />
+                                FontAttributes="Bold"
+                                Text="{Binding CompanyName}"
+                                TextColor="White" />
                         </VerticalStackLayout>
                     </ViewCell>
                 </DataTemplate>
@@ -42,9 +43,9 @@
                     <ViewCell>
                         <VerticalStackLayout>
                             <Label
-                            FontAttributes="Bold"
-                            FontSize="18"
-                            Text="{Binding Name}" />
+                                FontAttributes="Bold"
+                                FontSize="18"
+                                Text="{Binding Name}" />
                             <Label Text="{Binding Description}" TextColor="Gray" />
 
                             <HorizontalStackLayout>
@@ -57,7 +58,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
             <ListView.Footer>
-                <Label Text="my Footer - 2024"/>
+                <Label Text="my Footer - 2024" />
             </ListView.Footer>
         </ListView>
 

@@ -6,6 +6,21 @@
     xmlns:pages="clr-namespace:AppMAUIGallery.Views.Shells.Pages"
     Title="AppShell">
 
+    <Shell.FlyoutHeader>
+        <StackLayout Padding="20">
+            <Image HeightRequest="70" Source="clock.png" />
+            <Label
+                FontSize="10"
+                HorizontalOptions="Center"
+                Text="Cristian"
+                TextColor="Black" />
+            <Label
+                FontSize="8"
+                HorizontalOptions="Center"
+                Text="email@email.com"
+                TextColor="Gray" />
+        </StackLayout>
+    </Shell.FlyoutHeader>
 
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent
@@ -26,19 +41,23 @@
             Icon="three.png"
             Route="page3" />
 
-        <Tab Title="4 and 5" Icon="pages4u5.png">
+        <!--
+         cadastro/passo1
+         cadastro/passo2
+        -->
+        <Tab Title="4 and 5" Icon="pages4u5.png" Route="cadastro">
 
             <ShellContent
                 Title="Page 4"
                 Icon="four.png"
-                Route="page4">
-                <pages:Page4 />
+                Route="passo1">
+                <pages:Page4/>
             </ShellContent>
 
             <ShellContent
                 Title="Page 5"
                 Icon="five.png"
-                Route="page5">
+                Route="passo2">
                 <pages:Page5 />
             </ShellContent>
 

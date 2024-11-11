@@ -1,36 +1,37 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppMAUIGallery.Views.Components.Lists.CollectionViewPage"
-             Title="CollectionViewPage">
+<ContentPage
+    x:Class="AppMAUIGallery.Views.Components.Lists.CollectionViewPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="CollectionViewPage">
     <VerticalStackLayout>
-        <Label 
-            Text="Collection View Page"
-            VerticalOptions="Center" 
+        <Label
+            FontSize="30"
             HorizontalOptions="Center"
-            FontSize="30"/>
+            Text="Collection View Page"
+            VerticalOptions="Center" />
 
-        <Label 
-              Text="É a forma mais moderna de criar listas. Tem mais funcoes que a listview, mais performatica com mais funcionalidades. Nao funciona bem no windows, apenas no Android e IOS"
-              VerticalOptions="Center" 
-              HorizontalOptions="Start"
-              FontSize="20"/>
+        <Label
+            FontSize="20"
+            HorizontalOptions="Start"
+            Text="É a forma mais moderna de criar listas. Tem mais funcoes que a listview, mais performatica com mais funcionalidades. Nao funciona bem no windows, apenas no Android e IOS"
+            VerticalOptions="Center" />
 
         <Grid>
             <RefreshView RefreshColor="Purple" Refreshing="RefreshView_Refreshing">
                 <CollectionView
-                x:Name="CollectionViewControl"
-                IsGrouped="True"
-                RemainingItemsThreshold="-1"
-                RemainingItemsThresholdReached="CollectionViewControl_RemainingItemsThresholdReached"
-                Scrolled="CollectionViewControl_Scrolled"
-                SelectionChanged="CollectionViewControl_SelectionChanged"
-                SelectionMode="Multiple">
+                    x:Name="CollectionViewControl"
+                    IsGrouped="True"
+                    RemainingItemsThreshold="-1"
+                    RemainingItemsThresholdReached="CollectionViewControl_RemainingItemsThresholdReached"
+                    Scrolled="CollectionViewControl_Scrolled"
+                    SelectionChanged="CollectionViewControl_SelectionChanged"
+                    SelectionMode="Multiple">
                     <CollectionView.Header>
                         <Label x:Name="LblSelectedMovies" />
                     </CollectionView.Header>
                     <CollectionView.ItemsLayout>
-                        <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
+                        <LinearItemsLayout ItemSpacing="10" Orientation="Vertical" />
                     </CollectionView.ItemsLayout>
                     <CollectionView.GroupHeaderTemplate>
                         <DataTemplate>
@@ -44,9 +45,9 @@
                         <DataTemplate>
                             <VerticalStackLayout Padding="10">
                                 <Label
-                                FontAttributes="Bold"
-                                FontSize="16"
-                                Text="{Binding Name}" />
+                                    FontAttributes="Bold"
+                                    FontSize="16"
+                                    Text="{Binding Name}" />
                                 <Label Text="{Binding Description}" TextColor="Gray" />
                                 <HorizontalStackLayout>
                                     <Label Margin="10" Text="{Binding LaunchYear}" />
@@ -68,19 +69,19 @@
             </RefreshView>
 
             <Button
-            Margin="10"
-            Clicked="Button_Clicked"
-            HorizontalOptions="End"
-            Text="Vá para filme 8"
-            VerticalOptions="Start" />
+                Margin="10"
+                Clicked="Button_Clicked"
+                HorizontalOptions="End"
+                Text="Vá para filme 8"
+                VerticalOptions="Start" />
 
             <Label
-            x:Name="LblScrollStatus"
-            Padding="10"
-            BackgroundColor="LightGray"
-            HorizontalOptions="End"
-            VerticalOptions="End" />
+                x:Name="LblScrollStatus"
+                Padding="10"
+                BackgroundColor="LightGray"
+                HorizontalOptions="End"
+                VerticalOptions="End" />
         </Grid>
-        
+
     </VerticalStackLayout>
 </ContentPage>

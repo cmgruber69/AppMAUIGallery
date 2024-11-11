@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="AppMAUIGallery.Views.Shells.Pages.Page1"
+    x:Class="AppMAUIGallery.Views.Shells.Pages.Page1Step1"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="Shell Page1">
+    Title="Shell Page1 Step1">
     <VerticalStackLayout Spacing="10">
         <Label
             FontSize="20"
             HorizontalOptions="Center"
-            Text="Shell Page 1"
+            Text="Shell Page1 Step1"
             VerticalOptions="Center" />
-
-        <Button
-            Clicked="GoToStep1"
-            MaximumWidthRequest="200"
-            Text="Go to Step 1" />
 
         <Button
             Clicked="GoToStep2"
             MaximumWidthRequest="200"
             Text="Go to Step 2" />
+
+        <Button
+            Clicked="GoBackPage1"
+            MaximumWidthRequest="200"
+            Text="Go Back to Page 1" />
 
     </VerticalStackLayout>
 </ContentPage>

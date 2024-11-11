@@ -20,5 +20,16 @@
             Released="Button_Released"
             Text="Clique-me"
             TextColor="Blue" />
+
+        <Button
+            Margin="10"
+            BackgroundColor="Blue"
+            BorderColor="Black"
+            BorderWidth="2"
+            ContentLayout="Top, 30"
+            ImageSource="person.png"
+            Text="Profile"
+            WidthRequest="150" />
+
     </VerticalStackLayout>
 </ContentPage>

@@ -1,5 +1,7 @@
 ﻿using AppMAUIGallery.Models;
 using AppMAUIGallery.Views.Animations;
+using AppMAUIGallery.Views.Charts;
+using AppMAUIGallery.Views.CommunityMaui;
 using AppMAUIGallery.Views.Components;
 using AppMAUIGallery.Views.Components.Cells;
 using AppMAUIGallery.Views.Components.Forms;
@@ -9,6 +11,7 @@ using AppMAUIGallery.Views.Components.Shells;
 using AppMAUIGallery.Views.Components.Visuals;
 using AppMAUIGallery.Views.Layouts;
 using AppMAUIGallery.Views.Styles;
+using AppMAUIGallery.Views.Utils;
 
 
 namespace AppMAUIGallery.Repositories
@@ -20,6 +23,7 @@ namespace AppMAUIGallery.Repositories
             _components = new List<Component>();
             _groupComponents = new List<GroupComponent>();
 
+            //LoadAccessability();
             LoadLayouts();
             LoadControls();
             LoadVisuals();
@@ -28,10 +32,10 @@ namespace AppMAUIGallery.Repositories
             LoadCollections();
             LoadStyles();
             LoadAnimations();
-            //LoadUtils();
-            //LoadCommunityMaui();
+            LoadUtils();
+            LoadCommunityMaui();
             LoadShell();
-            //LoadAccessability();
+            LoadCharts();
         }
 
         private void LoadShell()
@@ -51,6 +55,7 @@ namespace AppMAUIGallery.Repositories
             _components.AddRange(components);
             _groupComponents.Add(group);
         }
+
         //private void LoadAccessability()
         //{
         //    var components = new List<Component> {
@@ -67,6 +72,7 @@ namespace AppMAUIGallery.Repositories
         //    _components.AddRange(components);
         //    _groupComponents.Add(group);
         //}
+
         private void LoadLayouts()
         {
             var components = new List<Component> {
@@ -397,78 +403,100 @@ namespace AppMAUIGallery.Repositories
             _groupComponents.Add(group);
         }
 
-        //private void LoadUtils()
-        //{
-        //    var components = new List<Component> {
-        //        new Component {
-        //            Title = "Behavior",
-        //            Description = "Lógica que pode ser associada a um componente da tela.",
-        //            Page = typeof(BehaviorPage)
-        //        },
-        //        new Component {
-        //            Title = "Trigger",
-        //            Description = "Gatilho que dispara uma alteração visual no componente.",
-        //            Page = typeof(TriggerPage)
-        //        },
-        //        new Component {
-        //            Title = "OnPlatform/OnIdiom",
-        //            Description = "Define valores diferentes entre o S.O. e também pelo tipo de dispositivo.",
-        //            Page = typeof(PlatformIdiomPage)
-        //        },
-        //        new Component {
-        //            Title = "Fontes",
-        //            Description = "Como usar fontes diferentes no nosso aplicativo.",
-        //            Page = typeof(FontPage)
-        //        },
-        //        new Component {
-        //            Title = "Color/Brush",
-        //            Description = "Como colocar as cores nos seus componentes.",
-        //            Page = typeof(ColorPage)
-        //        },
-        //    };
+        private void LoadUtils()
+        {
+            var components = new List<Component> {
+                new Component {
+                    Title = "Behavior",
+                    Description = "Logic that can be associated with a screen component.",
+                    Page = typeof(BehaviorPage)
+                },
+                new Component {
+                    Title = "Trigger",
+                    Description = "Trigger that triggers a visual change in the component",
+                    Page = typeof(TriggerPage)
+                },
+                new Component {
+                    Title = "OnPlatform/OnIdiom",
+                    Description = "Sets different values ​​between OS and also by device type.",
+                    Page = typeof(PlatformIdiomPage)
+                },
+                new Component {
+                    Title = "Fontes",
+                    Description = "Como usar fontes diferentes no nosso aplicativo.",
+                    Page = typeof(FontPage)
+                },
+                new Component {
+                    Title = "Color/Brush",
+                    Description = "Como colocar as cores nos seus componentes.",
+                    Page = typeof(ColorPage)
+                },
+            };
 
-        //    var group = new GroupComponent() { Name = "Útils" };
-        //    group.AddRange(components);
+            var group = new GroupComponent() { Name = "Útils" };
+            group.AddRange(components);
 
-        //    _components.AddRange(components);
-        //    _groupComponents.Add(group);
-        //}
+            _components.AddRange(components);
+            _groupComponents.Add(group);
+        }
 
-        //private void LoadCommunityMaui()
-        //{
-        //    var components = new List<Component> {
-        //        new Component {
-        //            Title = "Snackbar e Toast",
-        //            Description = "Formas de emitir mensagens para o usuário.",
-        //            Page = typeof(AlertsPage)
-        //        },
-        //        new Component {
-        //            Title = "Behaviors",
-        //            Description = "Apresenta alguns behaviors que são: Masked, StatusBar e EventToCommand(MVVM).",
-        //            Page = typeof(CommunityBehaviorPage)
-        //        },
-        //        new Component {
-        //            Title = "Expander",
-        //            Description = "Um componente que oculta/apresenta um conteúdo associado a ele.",
-        //            Page = typeof(ExpanderPage)
-        //        },
-        //        new Component {
-        //            Title = "Pop-up",
-        //            Description = "Apresenta um modal(Pop-up) na tela",
-        //            Page = typeof(PopupPage)
-        //        },
-        //        new Component {
-        //            Title = "MediaElement",
-        //            Description = "Player de mídia (Áudio/Vídeo)",
-        //            Page = typeof(MediaElementPage)
-        //        },
-        //    };
+        private void LoadCommunityMaui()
+        {
+            var components = new List<Component> {
+                new Component {
+                    Title = "Snackbar e Toast",
+                    Description = "Ways to send messages to the user.",
+                    Page = typeof(AlertsPage)
+                },
+                new Component {
+                    Title = "Behaviors",
+                    Description = "It presents some behaviors which are: Masked, StatusBar and EventToCommand(MVVM).",
+                    Page = typeof(CommunityBehaviorPage)
+                },
+                new Component {
+                    Title = "Expander",
+                    Description = "A component that hides/shows content associated with it.",
+                    Page = typeof(ExpanderPage)
+                },
+                new Component {
+                    Title = "Pop-up",
+                    Description = "Displays a modal (Pop-up) on the screen",
+                    Page = typeof(PopupPage)
+                },
+                new Component {
+                    Title = "MediaElement",
+                    Description = "Player de mídia (Áudio/Vídeo)",
+                    Page = typeof(MediaElementPage)
+                },
+            };
 
-        //    var group = new GroupComponent() { Name = ".NET MAUI Community Toolkit" };
-        //    group.AddRange(components);
+            var group = new GroupComponent() { Name = ".NET MAUI Community Toolkit" };
+            group.AddRange(components);
 
-        //    _components.AddRange(components);
-        //    _groupComponents.Add(group);
-        //}
+            _components.AddRange(components);
+            _groupComponents.Add(group);
+        }
+
+        private void LoadCharts()
+        {
+            var components = new List<Component> {
+                new Component {
+                    Title = "Google Charts",
+                    Description = "Google Charts in Maui.",
+                    Page = typeof(ChartPage)
+                },
+                 new Component {
+                    Title = "LiveCharts2",
+                    Description = "LiveCharts2 in Maui.",
+                    Page = typeof(LiveChartsPage)
+                }
+            };
+
+            var group = new GroupComponent() { Name = "Charts" };
+            group.AddRange(components);
+
+            _components.AddRange(components);
+            _groupComponents.Add(group);
+        }
     }
 }

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMAUIGallery.Views.Utils.FontPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="FontPage">
+    <VerticalStackLayout Padding="20">
+        <Label
+            FontSize="30"
+            HorizontalOptions="Center"
+            Text="Fonts source"
+            VerticalOptions="Center" />
+
+
+        <Label
+            Padding="10"
+            FontFamily="FolditBold"
+            FontSize="30"
+            Text="fonts.google.com" />
+        <Label
+            Padding="10"
+            FontFamily="FolditRegular"
+            FontSize="30"
+            Text="fonts.google.com" />
+        <Label
+            Padding="10"
+            FontFamily="FolditLight"
+            FontSize="30"
+            Text="fonts.google.com" />
+
+        <BoxView BackgroundColor="Black" HeightRequest="1" />
+
+        <Label
+            FontSize="30"
+            HorizontalOptions="Center"
+            Text="Fonts ICON source"
+            VerticalOptions="Center" />
+
+        <Label
+            Padding="10"
+            FontSize="20"
+            Text="Fontaweasome.com" />
+        <Label
+            Padding="10"
+            FontSize="20"
+            Text="icofont.com" />
+        <Label
+            Padding="10"
+            FontSize="20"
+            Text="fontello.com" />
+
+        <BoxView BackgroundColor="Black" HeightRequest="1" />
+
+        <Label
+            FontSize="25"
+            HorizontalOptions="Center"
+            Text="Implementation example - Font Icon"
+            VerticalOptions="Center" />
+
+        <!--  the icon code: 0xe800 must be changed to: &#xxe800;  -->
+        <!--  exclude 0 and Include &#x  and ;  -->
+        <Image WidthRequest="50">
+            <Image.Source>
+                <FontImageSource
+                    FontFamily="FontelloIcons"
+                    Glyph="&#xe800;"
+                    Size="50"
+                    Color="Black" />
+            </Image.Source>
+        </Image>
+
+        <Image WidthRequest="50">
+            <Image.Source>
+                <FontImageSource
+                    FontFamily="FontelloIcons"
+                    Glyph="&#xf21b;"
+                    Size="50"
+                    Color="Blue" />
+            </Image.Source>
+        </Image>
+
+        <Image WidthRequest="50">
+            <Image.Source>
+                <FontImageSource
+                    FontFamily="FontelloIcons"
+                    Glyph="&#xf30e;"
+                    Size="50"
+                    Color="DarkRed" />
+            </Image.Source>
+        </Image>
+
+    </VerticalStackLayout>
+</ContentPage>

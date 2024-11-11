@@ -6,8 +6,12 @@
     Title="Page3">
     <VerticalStackLayout>
         <Label
+            FontSize="20"
             HorizontalOptions="Center"
-            Text="Welcome to .NET MAUI!"
+            Text="Page 3"
             VerticalOptions="Center" />
+
+
+
     </VerticalStackLayout>
 </ContentPage>
